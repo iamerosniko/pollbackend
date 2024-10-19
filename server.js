@@ -47,6 +47,7 @@ io.on('connection', (socket) => {
     console.log('reset');
     individuals=[];
     io.emit('individuals',individuals);
+    localStorage.clear();
   })
 
   socket.on('disconnect', () => {
